@@ -4,74 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treino</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 20px;
-
-            background-image: url("img/capa.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            margin: 0;
-        }
-        p {
-            text-align: justify;
-        }
-        .exercise {
-            margin-bottom: 30px;
-        }
-        .exercise img {
-            width: 300px;
-            height: auto;
-            display: block;
-            margin: 10px 0;
-        }
-        button {
-            background-color : #ac9be0;
-            
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
-    <h1>Treino Rose Docinho</h1>
+    <div class="container">
+
     
-    <hr>
-    <a href="segunda.html">
-        <button><b>Treino Segunda-Feira</b></button>
-    </a>
-    <br>
-    <hr>
-    <a href="terca.html">
-        <button><b>Treino Terça-Feira</b></button>
-    </a>
-    <br>
-    <hr>
-    <a href="quarta.html">
-        <button><b>Treino Quarta-Feira</b></button>
-    </a>
-    <br>
-    <hr>
-    <a href="quinta.html">
-        <button><b>Treino Quinta-Feira</b></button>
-    </a>
-    <br>
-    <hr>
-    <a href="sexta.html">
-        <button><b>Treino Sexta-Feira</b></button>
-    </a>
-    <br>
-    <hr>
+    <input type = "password" id = "senha" placeholder="Digite sua senha">
+    <button onclick="perguntarSenha()">Entrar</button>
+    
+    <script>
+    
+
+        function perguntarSenha() {
+
+            const senhaInput = document.getElementById("senha");
+            const senha = senhaInput.value;
+
+            if (senha === "Rosedocinho") {
+                window.location.href = "paginaInicial.html" 
+            }
+            else {
+                alert ("Senha incorreta! Tente Novamente.")
+                senhaInput.value = "";
+                senhaInput.focus();
+            }
+            
+
+        }
 
 
+    </script>
 
 
 </body>

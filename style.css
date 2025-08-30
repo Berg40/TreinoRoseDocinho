@@ -1,0 +1,33 @@
+body {
+            
+            background-image: url("img/BergRose.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+             
+            height: 100vh;
+            margin: 0;
+        }
+        p {
+            text-align: justify;
+        }
+        
+        button {
+            background-color : #eca6d7;
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 6px;
+            border: none;
+
+        }
+        input {
+            padding: 5px;
+        }
+        .container {
+            text-align: center;
+            background-color: transparent;
+            padding-top: 300px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0,2);
+        }
